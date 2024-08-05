@@ -14,7 +14,6 @@ code {
 
 :root {
   --bg-color: rgba(150, 150, 150, 1);
-
   --color-0: #282c34;
   --color-1: #ff6600;
   --color-2: #eec900;
@@ -24,12 +23,10 @@ code {
   --color-6: #66ccff;
   --color-7: #ff0000;
   --color-border: #3b3c3d;
-
   --cols: 10;
   --rows: 18;
   --tile-size: 20px;
   --border-width: 2px;
-
   --button-radius: 0%;
 }
 
@@ -73,18 +70,12 @@ code {
   --col-side: calc(var(--tile-size) * 4);
   --col-center: calc(var(--tile-size) * 10);
   --grid-height: calc(var(--tile-size) * 18);
-
   width: calc(var(--tile-size) * (4 + 1 + 10));
   margin: auto;
   display: grid;
-
   grid-gap: var(--tile-size) var(--tile-size);
-
   grid-template-columns: var(--col-side) var(--col-center);
-
   grid-template-rows: 50px calc(var(--tile-size) * 4) var(--grid-height) 100px;
-
-
   grid-template-areas:
     'h h '
     'l r '

@@ -1,8 +1,9 @@
-import React from 'react';
-import '../../../styles/Square.css';
+import React from 'react'
+import '../../../styles/Square.css'
 
-export default function Square(props) {
-  const squareColor = `square color-${props.color}`;
+// 渲染一个带有动态颜色样式的方块
+export default function Square (props) {
+  const squareColor = `square color-${props.color}`
 
-  return <div className={squareColor}></div>;
+  return <div className={squareColor}></div>
 }

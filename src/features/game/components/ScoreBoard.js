@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { resume, pause, restart, setScore } from '../game-slice'
-
 import '../../../styles/ScoreBoard.css'
 
+// 得分块
 export default function ScoreBoard (props) {
   //  eslint-disable-next-line 
   const dispatch = useDispatch()
@@ -17,6 +17,7 @@ export default function ScoreBoard (props) {
     // eslint-disable-next-line
   }, [score, highestScore,])
 
+  //暂停或继续
   function playHandler () {
     if (gameOver) return
     if (isRunning) {
@@ -25,7 +26,7 @@ export default function ScoreBoard (props) {
       dispatch(resume())
     }
   }
-
+  //重开
   function restartHandler () {
     dispatch(restart())
   }
