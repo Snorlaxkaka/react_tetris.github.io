@@ -5,10 +5,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: calc(var(--tile-size) * 10);
-  height: calc(var(--tile-size) * 10);
+  width: calc(var(--tile-size) * 15);
+  height: calc(var(--tile-size) * 15);
+  margin-left: -calc(var(--tile-size) * 15) / 2;
+  margin-top: -calc(var(--tile-size) * 15) / 2;
   background-color: rgba(255, 255, 255, 0.5);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden {

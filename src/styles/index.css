@@ -25,9 +25,22 @@ code {
   --color-border: #3b3c3d;
   --cols: 10;
   --rows: 18;
-  --tile-size: 20px;
+  --tile-size: 5vw;
   --border-width: 2px;
   --button-radius: 0%;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --tile-size: 20px; /* PC端的值 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .App {
+    width: 500px;
+    padding-left: 4vw;
+    height: 667px;
+  }
 }
 
 .color-0 {
@@ -67,10 +80,9 @@ code {
 }
 
 .App {
-  --col-side: calc(var(--tile-size) * 4);
-  --col-center: calc(var(--tile-size) * 10);
+  --col-side: calc(var(--tile-size) * 5);
+  --col-center: calc(var(--tile-size) * 12);
   --grid-height: calc(var(--tile-size) * 18);
-  width: calc(var(--tile-size) * (4 + 1 + 10));
   margin: auto;
   display: grid;
   grid-gap: var(--tile-size) var(--tile-size);

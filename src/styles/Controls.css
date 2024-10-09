@@ -6,19 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: row;
 }
 
 .control-button {
-  --size: calc(var(--tile-size) * 2.5);
-  width: var(--size);
-  height: var(--size);
+  --size: calc(var(--tile-size) * 2);
+  width: calc(var(--tile-size) * 2);
+  height: calc(var(--tile-size) * 2);
   text-align: center;
   display: block;
-  border-width: 3px;
+  border-width: 1px;
+  margin: 5px;
   border-radius: var(--button-radius);
   border-color: none;
   background-color: var(--color-0);
   color: white;
-  font-size: 10px;
 }

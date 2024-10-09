@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { resume, pause, restart, setScore } from '../game-slice'
 import '../../../styles/ScoreBoard.css'
 
-// 得分块
+// 得分块 
 export default function ScoreBoard (props) {
   //  eslint-disable-next-line 
   const dispatch = useDispatch()
